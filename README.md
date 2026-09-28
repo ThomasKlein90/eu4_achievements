@@ -50,14 +50,8 @@ worksheets are accessible to anyone who visits the repository.
 
 To update the hosted data without editing code:
 
-1. Edit and save `EU4_Achievements.xlsx` in Excel.
-2. Push the saved workbook to the repository's `main` branch. This can be done
-   with GitHub Desktop: review the workbook change, commit it, then push.
-3. Wait for the **Publish tracker to GitHub Pages** workflow to finish under
-   the repository's **Actions** tab. It regenerates and commits
-   `data/achievements.json`, then publishes the updated site.
-4. Reload the website, or use **Refresh data** in the top bar to fetch the
-   latest published dataset without a full page reload.
+Follow the [step-by-step update guide](./UPDATE_ACHIEVEMENTS.md) to edit the
+workbook locally and upload it through GitHub's website without GitHub Desktop.
 
 The refresh button loads data already published to Pages; it does not start a
 workflow. Deployment must finish first. Progress overrides saved in the
