@@ -45,6 +45,8 @@ The site is published at <https://thomasklein90.github.io/eu4_achievements/>.
 GitHub Actions exports the workbook and deploys the tracker whenever changes
 to the workbook or site are pushed to `main`. The Pages artifact contains only
 the HTML, CSS, JavaScript and exported JSON; it does not contain the workbook.
+The GitHub repository itself is public, however, so the workbook and all its
+worksheets are accessible to anyone who visits the repository.
 
 To update the hosted data without editing code:
 
