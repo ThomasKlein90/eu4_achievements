@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#10140f">
+    <meta name="description" content="A personal Europa Universalis IV achievement tracker and run planner.">
+    <title>EU4 Achievement Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <a class="brand" href="#overview" aria-label="Campaign Ledger overview">
+          <span class="brand-mark">E</span>
+          <span class="brand-copy"><strong>CAMPAIGN</strong><small>ACHIEVEMENT LEDGER</small></span>
+        </a>
+
+        <div class="sidebar-label">YOUR EMPIRE</div>
+        <nav class="primary-nav" aria-label="Main navigation">
+          <button class="nav-link active" data-view="overview"><span class="nav-icon">◈</span>Overview</button>
+          <button class="nav-link" data-view="achievements"><span class="nav-icon">▤</span>Achievements<span class="nav-count" id="nav-achievement-count"></span></button>
+          <button class="nav-link" data-view="runs"><span class="nav-icon">⌘</span>Run planner<span class="nav-count" id="nav-run-count"></span></button>
+        </nav>
+
+        <div class="sidebar-rule"></div>
+        <div class="sidebar-label">AT A GLANCE</div>
+        <div class="sidebar-progress">
+          <div class="side-progress-heading"><span>Completion</span><strong id="sidebar-percent">—</strong></div>
+          <div class="progress-track"><span id="sidebar-bar"></span></div>
+          <p><span id="sidebar-done">—</span> achievements earned</p>
+        </div>
+        <div class="sidebar-note"><span class="online-dot"></span><span>Personal campaign<br>Local progress saved</span></div>
+        <div class="sidebar-version">EUROPA UNIVERSALIS IV<br>CAMPAIGN ARCHIVE · 1444–1821</div>
+      </aside>
+
+      <main class="main-content">
+        <header class="topbar">
+          <div class="breadcrumbs"><span>CAMPAIGN ARCHIVE</span><span class="crumb-slash">/</span><strong id="page-crumb">OVERVIEW</strong></div>
+          <div class="topbar-right"><button class="text-button refresh-data-button" type="button" data-action="refresh-data" title="Load the latest data published to GitHub Pages">Refresh data</button><span class="save-state"><span class="online-dot"></span>Saved on this device</span><span class="topbar-divider"></span><span class="user-avatar">TK</span><span class="user-name">My campaign</span></div>
+        </header>
+
+        <section class="view-panel active" id="view-overview" aria-labelledby="overview-title">
+          <div class="page-heading">
+            <div><div class="eyebrow"><span class="eyebrow-line"></span>YOUR EU4 ARCHIVE</div><h1 id="overview-title">EU4 Achievement<br><em>tracker</em></h1><p class="page-intro">A record of the challenges conquered — and the ones still calling.</p></div>
+            <div class="heading-seal"><span>1444</span><i>✳</i><span>1821</span></div>
+          </div>
+
+          <div class="overview-grid">
+            <article class="panel progress-panel">
+              <div class="panel-overline">TOTAL COMPLETION <span class="subtle-tag">WEIGHTED BY DIFFICULTY</span></div>
+              <div class="progress-main">
+                <div class="progress-ring" id="progress-ring"><div class="ring-center"><strong id="weighted-percent">—</strong><span>COMPLETE</span></div></div>
+                <div class="progress-copy"><div class="large-number"><span id="done-count">—</span><small> / <span id="total-count">—</span></small></div><h2>achievements unlocked</h2><div class="points-line"><span>POINTS</span><strong id="earned-points">—</strong><span class="points-separator">/</span><span id="total-points">—</span></div><p class="points-note">points are assigned based on difficulty and rarity of each achievement</p></div>
+              </div>
+              <div class="completion-footer"><span><span class="legend-dot earned-dot"></span>Earned <strong id="earned-footer">—</strong></span><span><span class="legend-dot remaining-dot"></span>Remaining <strong id="remaining-footer">—</strong></span><button class="text-button" data-go="achievements">View all achievements <span>→</span></button></div>
+            </article>
+
+            <article class="panel run-summary-panel">
+              <div class="panel-overline">CAMPAIGN JOURNAL <span class="panel-icon">⌘</span></div>
+              <h2>Runs, recorded.</h2><p class="muted">Your achievement plans, gathered into campaigns.</p>
+              <div class="run-summary-stats"><div><strong id="runs-remaining">—</strong><span>REMAINING RUNS</span></div></div>
+              <button class="button button-secondary full-button" data-go="runs">Open run planner <span>→</span></button>
+            </article>
+          </div>
+
+          <section class="panel difficulty-panel">
+            <div class="section-heading compact-heading"><div><div class="eyebrow"><span class="eyebrow-line"></span>BY DIFFICULTY</div><h2>Every victory counts.</h2></div><span class="muted small-copy">Completion across each challenge tier</span></div>
+            <div id="difficulty-chart" class="difficulty-chart"></div>
+          </section>
+
+          <div class="section-heading"><div><div class="eyebrow"><span class="eyebrow-line"></span>YOUR RECORD</div><h2>Trophy cases and challenging goals</h2></div><button class="text-button" data-go="achievements">Browse achievements <span>→</span></button></div>
+          <div class="insights-grid">
+            <article class="panel insight-panel"><div class="panel-overline">HARD-WON VICTORIES <span class="insight-symbol">⚑</span></div><p class="muted small-copy">The highest-difficulty achievements in your record.</p><div id="hardest-list" class="insight-list"></div></article>
+            <article class="panel insight-panel"><div class="panel-overline">RAREST CONQUESTS <span class="insight-symbol">✦</span></div><p class="muted small-copy">Your rarest earned achievements</p><div id="rarest-list" class="insight-list"></div></article>
+            <article class="panel insight-panel missing-panel"><div class="panel-overline">ON THE HORIZON <span class="insight-symbol">↗</span></div><p class="muted small-copy">High-value achievements still to claim.</p><div id="missing-list" class="insight-list"></div><button class="text-button" data-go="achievements">See what’s missing <span>→</span></button></article>
+          </div>
+          <footer class="page-footer"><span>EUROPA UNIVERSALIS IV · PERSONAL ACHIEVEMENT LEDGER</span><span id="source-label"></span></footer>
+        </section>
+
+        <section class="view-panel" id="view-achievements" aria-labelledby="achievements-title" hidden>
+          <div class="page-heading compact-page-heading"><div><div class="eyebrow"><span class="eyebrow-line"></span>THE FULL ARCHIVE</div><h1 id="achievements-title">Achievements</h1><p class="page-intro">Every challenge in the ledger, with its weight, rarity and requirements.</p></div><div class="archive-stats"><div class="archive-total"><strong id="archive-total">—</strong><span>ENTRIES</span></div><div class="archive-total"><strong id="archive-completed">—</strong><span>COMPLETED</span></div></div></div>
+          <div class="panel toolbar-panel">
+            <label class="search-field"><span class="search-icon">⌕</span><input id="achievement-search" type="search" placeholder="Search achievements, countries, requirements…" autocomplete="off"><kbd>⌘ K</kbd></label>
+            <div class="filter-row">
+              <label class="select-wrap"><span>STATUS</span><select id="achievement-status"><option value="all">All achievements</option><option value="remaining">Remaining</option><option value="completed">Completed</option></select></label>
+              <div class="difficulty-filter" data-difficulty-filter="achievements">
+                <span class="filter-caption">DIFFICULTY</span>
+                <button class="difficulty-filter-trigger" type="button" data-difficulty-toggle="achievements" aria-expanded="false" aria-controls="achievement-difficulty-menu"><span data-difficulty-label="achievements">All difficulties</span><span class="filter-chevron" aria-hidden="true">⌄</span></button>
+                <div class="difficulty-filter-menu" id="achievement-difficulty-menu" hidden>
+                  <label><input type="checkbox" data-difficulty-all="achievements" checked><span>All difficulties</span></label>
+                  <div class="difficulty-filter-divider"></div>
+                  <label><input type="checkbox" data-difficulty-option="achievements" value="I" checked><span>I · Impossible</span></label>
+                  <label><input type="checkbox" data-difficulty-option="achievements" value="VH" checked><span>VH · Very hard</span></label>
+                  <label><input type="checkbox" data-difficulty-option="achievements" value="H" checked><span>H · Hard</span></label>
+                  <label><input type="checkbox" data-difficulty-option="achievements" value="M" checked><span>M · Medium</span></label>
+                  <label><input type="checkbox" data-difficulty-option="achievements" value="E" checked><span>E · Easy</span></label>
+                  <label><input type="checkbox" data-difficulty-option="achievements" value="VE" checked><span>VE · Very easy</span></label>
+                </div>
+              </div>
+              <label class="select-wrap"><span>SORT BY</span><select id="achievement-sort"><option value="points">Highest points</option><option value="rarity">Rarest first</option><option value="difficulty">Hardest first</option><option value="name">Name A–Z</option></select></label>
+              <span class="results-count" id="achievement-results"></span>
+            </div>
+          </div>
+          <div class="achievement-list" id="achievement-list"></div>
+          <div class="empty-state panel" id="achievement-empty" hidden><span>⌕</span><h2>No achievements found</h2><p>Try a different search or clear the filters.</p><button class="button button-secondary" data-action="clear-achievement-filters">Clear filters</button></div>
+          <footer class="page-footer"><span>PROGRESS IS SAVED LOCALLY IN THIS BROWSER</span><button class="text-button" data-action="reset-progress">Reset local progress</button></footer>
+        </section>
+
+        <section class="view-panel" id="view-runs" aria-labelledby="runs-title" hidden>
+          <div class="page-heading compact-page-heading"><div><div class="eyebrow"><span class="eyebrow-line"></span>THE NEXT CAMPAIGN</div><h1 id="runs-title">Run planner</h1><p class="page-intro">Your planned campaigns, grouped around the achievements they can deliver.</p></div><button class="button button-gold random-button" data-action="suggest-run"><span>✳</span> Suggest a run</button></div>
+          <div class="suggestion-wrap" id="suggestion-wrap" hidden></div>
+          <div class="run-overview-cards">
+            <article class="panel run-stat-card"><span class="run-stat-icon">✧</span><div><strong id="run-stat-total">—</strong><span>REMAINING RUNS</span></div></article>
+            <article class="panel run-stat-card"><span class="run-stat-icon">◈</span><div><strong id="run-stat-points">—</strong><span>POINTS STILL AVAILABLE</span></div></article>
+          </div>
+          <div class="panel toolbar-panel runs-toolbar">
+            <label class="search-field"><span class="search-icon">⌕</span><input id="run-search" type="search" placeholder="Find a country, run or achievement…" autocomplete="off"></label>
+            <div class="filter-row run-filters">
+              <div class="difficulty-filter" data-difficulty-filter="runs">
+                <span class="filter-caption">DIFFICULTY</span>
+                <button class="difficulty-filter-trigger" type="button" data-difficulty-toggle="runs" aria-expanded="false" aria-controls="run-difficulty-menu"><span data-difficulty-label="runs">All difficulties</span><span class="filter-chevron" aria-hidden="true">⌄</span></button>
+                <div class="difficulty-filter-menu" id="run-difficulty-menu" hidden>
+                  <label><input type="checkbox" data-difficulty-all="runs" checked><span>All difficulties</span></label>
+                  <div class="difficulty-filter-divider"></div>
+                  <label><input type="checkbox" data-difficulty-option="runs" value="I" checked><span>I · Impossible</span></label>
+                  <label><input type="checkbox" data-difficulty-option="runs" value="VH" checked><span>VH · Very hard</span></label>
+                  <label><input type="checkbox" data-difficulty-option="runs" value="H" checked><span>H · Hard</span></label>
+                  <label><input type="checkbox" data-difficulty-option="runs" value="M" checked><span>M · Medium</span></label>
+                  <label><input type="checkbox" data-difficulty-option="runs" value="E" checked><span>E · Easy</span></label>
+                  <label><input type="checkbox" data-difficulty-option="runs" value="VE" checked><span>VE · Very easy</span></label>
+                </div>
+              </div>
+              <span class="results-count" id="run-results"></span>
+            </div>
+          </div>
+          <div class="run-list" id="run-list"></div>
+          <div class="empty-state panel" id="run-empty" hidden><span>⌕</span><h2>No runs found</h2><p>Try another search or difficulty.</p></div>
+          <footer class="page-footer"><span>RUN VALUE IS THE WEIGHTED POINTS STILL AVAILABLE</span><span>SHARE OF TOTAL USES ALL ACHIEVEMENT POINTS</span></footer>
+        </section>
+      </main>
+    </div>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>
