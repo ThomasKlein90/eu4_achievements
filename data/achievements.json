@@ -450,8 +450,8 @@
       "difficulty": "VH",
       "rarity": 0.004,
       "points": 296.0,
-      "done": false,
-      "startingCountry": "",
+      "done": true,
+      "startingCountry": "The Isles",
       "startingConditions": "- Playing as The Isles\n- *Not* using a random New World",
       "requirements": "- The year is before 1500\n- owns at least 20 fully colonized provinces(cities) that are *not*on an \nisland",
       "notes": "it is allowed to have provinces on islands, but these don't count towards \nthe 20. Islands in the context of this achievement means any province which \ndoes not have a land connection to mainland continents, meaning any \nprovince in Britain or Ireland will not count. Unfinished colonies also \ndon't count. An easy way to achieve this is to wait until one of the berber \nnations is without allies and noCB them. You can core Moroccan and Sus \nprovinces with extended range from exploration ideas and the colonial range \nadvisor. From there, you can keep eating North Africa, or go to West \nAfrica. The provinces do not need to be cored."
