@@ -385,8 +385,8 @@
       "difficulty": "M",
       "rarity": 0.004,
       "points": 74.0,
-      "done": false,
-      "startingCountry": "",
+      "done": true,
+      "startingCountry": "Imerina",
       "startingConditions": "*Not* using a random New World\n\nPlaying as one of the following countries: \n\n- Sakalava\n- Betsimisaraka\n- Imerina\n- Mahafaly\n- Antemoro",
       "requirements": "Is one of the following countries: \n\n- Sakalava\n- Betsimisaraka\n- Imerina\n- Mahafaly\n- Antemoro\n\nOwn and core all provinces in the following areas: \n\n- Madagascar Highlands\n- Betsimasaraka\n- Sakalava\n- Southern Madagascar\n\nOwn or have a non-tributary subject own all the following provinces: \n\n- Cape (1177)\n- Swellendam (1179)\n- Algoa Bay (833)\n- Xhosa (1180)\n- Wadjuk (1084)\n- Minang (2727)\n- Nukunu (2736)\n- Kaurna (1086)\n- Gunditjmara (2735)\n- Wurundjeri (1087)\n- Yuin (2734)\n- Peerapper (4869)\n- Pyemmairrener (4868)\n- Paredarerme (1085)\n- Tharawal (4858)\n- Ata Whenua (1246)\n- Timaru (1109)\n- Kawesqar (783)\n- Tierra del Fuego (782)\n- Florida Blanca (2869)\n- Falklands (1095)\n- South Georgia (2025)\n\nMap of the provinces:",
       "notes": "After taking over Madagascar befriend Kilwa to get Feudalism spreading. \nTake Exploration, then Expansion and colonize the provinces on the Cape of \nGood Hope. Afterwards focus your attention mostly on the Atlantic islands \nand South America to get the required provinces before Portugal does, only \nspreading east when waiting for colonies to finish for reach. Station \ntroops in Australia after the colonial nation forms, otherwise the natives \nwill attack. \n\nThis achievement is only visible if the Origins DLC is active, but no DLC \nis needed to complete it."
@@ -736,8 +736,8 @@
       "difficulty": "M",
       "rarity": 0.006,
       "points": 73.5,
-      "done": false,
-      "startingCountry": "",
+      "done": true,
+      "startingCountry": "Madyas",
       "startingConditions": "",
       "requirements": "- Is Madyas\n- Own and core the provinces of Tepeacac (2628), Mexico (852), Tullucan \n(2626) and Tlapacoyan(853, formerly called Huastec).",
       "notes": "You need to directly own and core the target provinces, and not through \nyour colonial nation. There are several ways to achieve this: \n\nMove your capital city to North America before a colonial nation forms. \n\nGet a colonial nation in one of the colonial regions adjacent to Mexico and \ngrant them a chain of colonized or conquered provinces in Mexico up to the \nachievement provinces with the help of the grant province subject \ninteraction(or by transferring occupations in a war if they are on the same \ncontinent as the capital of the CN). The achievement provinces can be cored \nas soon as the colonial nation has cored a province next to them. \n\nVassalize a native, take land from some other native including the needed \nones and a chain of provinces leading to the coast. Core one coastal \nprovince to be able to start coring the 4 achievement provinces. To avoid \nforming a colonial nation, the cored coastal province then has to be given \nto the vassal. \n\nUse the Unrestricted Conquest age ability from the Age of Revolutions. \n\nSimply annexing a vassal in the region won't fire the achievement."
@@ -1282,8 +1282,8 @@
       "difficulty": "M",
       "rarity": 0.008,
       "points": 73.0,
-      "done": false,
-      "startingCountry": "",
+      "done": true,
+      "startingCountry": "Cilli",
       "startingConditions": "- Playing as Cilli\n- *Not* using a random New World",
       "requirements": "- is *not*Cilli\n- *Not* playing as a released vassal",
       "notes": "Can be done by annexing Croatia, then culture shifting and re-forming it. \nUse the fact that you are eligible to form a royal marriage with both \nAustria and Hungary in the early game and later grab alliances with Poland \nand/or Bohemia to defeat Hungary for the important provinces."
@@ -2803,8 +2803,8 @@
       "difficulty": "VE",
       "rarity": 0.018,
       "points": 14.1,
-      "done": false,
-      "startingCountry": "",
+      "done": true,
+      "startingCountry": "Cilli",
       "startingConditions": "",
       "requirements": "- *Not* playing as a released vassal\n- Is Croatia\n- Station a unit of cavalry in Stockholm.",
       "notes": "Croatia doesn't actually have to be formed for the achievement. All you \nhave to do to get this achievement is to start as Croatia, ask for military \naccess from Sweden, load your starting cavalry regiment onto a transport, \nthen sail up next to Stockholm and move your cavalry onto it."
