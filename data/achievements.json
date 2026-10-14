@@ -866,8 +866,8 @@
       "difficulty": "H",
       "rarity": 0.007,
       "points": 146.5,
-      "done": false,
-      "startingCountry": "",
+      "done": true,
+      "startingCountry": "Mysore",
       "startingConditions": "Playing as Mysore",
       "requirements": "- All provinces in Deccan and Coromandel regions are owned by the \ncountry or a non-tributary subject",
       "notes": "You need to ally Bahmanis to make it possible to defeat Vijayanagar If you \ncan't, then you might have to restart a few times or no-cb a country in \nsoutheast Asia"
@@ -1061,8 +1061,8 @@
       "difficulty": "VH",
       "rarity": 0.007,
       "points": 293.0,
-      "done": false,
-      "startingCountry": "",
+      "done": true,
+      "startingCountry": "Offaly",
       "startingConditions": "Playing as Offaly",
       "requirements": "- Lead a personal union over a country whose capital fulfills both of \nthe following conditions: \n- is in the Iberia region\n- has a province culture in the Iberian culture group",
       "notes": "Forming Ireland or another country *will not* prevent the achievement but \ninstead only hiding its conditions. Take a single Spanish province with a \ncore of another tag and release that tag as a vassal. Place dynasty member \non the throne and annex the vassal. Return their core via the province \nscreen to release them as an independent nation with your dynasty ruling. \nClaim their throne, immediately declare with restoration of union CB and \nenforce union for the achievement. \n\nIt is also possible to obtain a \"Restoration of Union\" casus belli on Spain/\nCastile by forming France and completing the mission French Claim to Naples \n(requires having the Emperor DLC activated and the Domination not active)."
