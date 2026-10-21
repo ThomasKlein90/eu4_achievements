@@ -411,8 +411,8 @@
       "difficulty": "M",
       "rarity": 0.004,
       "points": 74.0,
-      "done": false,
-      "startingCountry": "",
+      "done": true,
+      "startingCountry": "Oda",
       "startingConditions": "",
       "requirements": "- Is Japan\n- Has enacted the Land of the Christian Sun government reform\n- The Palestine area and the province Cairo (361) have a Christian \nreligion and are owned by this country",
       "notes": "To get the Land of the Christian Sun government reform, it is mandatory to \nget the open outcome in the incident Spread of Christianity."
@@ -658,8 +658,8 @@
       "difficulty": "H",
       "rarity": 0.006,
       "points": 147.0,
-      "done": false,
-      "startingCountry": "",
+      "done": true,
+      "startingCountry": "Kaffa",
       "startingConditions": "Playing as Kaffa",
       "requirements": "- Developed in Caffa (285).\n- Any subject nation owns Caffa.",
       "notes": "Caffa is in the Pontic Steppe region, initially owned by Genoa."
@@ -983,8 +983,8 @@
       "difficulty": "M",
       "rarity": 0.007,
       "points": 73.25,
-      "done": false,
-      "startingCountry": "",
+      "done": true,
+      "startingCountry": "Kuba",
       "startingConditions": "Playing as Kuba",
       "requirements": "- Own or have a non-tributary subject own the province Havana (484)\n- The leading producer of Tobacco is *either* this country or a subject \nof this country",
       "notes": "- Not possible with Random New World.\n- Making the leading tobacco producer a tributary would count."
