@@ -1191,8 +1191,8 @@
       "difficulty": "H",
       "rarity": 0.008,
       "points": 146.0,
-      "done": false,
-      "startingCountry": "",
+      "done": true,
+      "startingCountry": "Teutonic Order",
       "startingConditions": "Playing as Teutonic Order",
       "requirements": "- *Not* playing as a released vassal\n- Is the Mongol Empire\n- Has enacted the Holy Horde government reform",
       "notes": "To form the Mongol Empire as the Teutonic Order you need to choose the \ncrusader path of missions after completing Defeat Poland, this will unlock \nthe mission Crusaders of the Steppes which allows forming the Mongol Empire \ndue to the unique government reform."
@@ -1373,8 +1373,8 @@
       "difficulty": "VH",
       "rarity": 0.008,
       "points": 292.0,
-      "done": false,
-      "startingCountry": "",
+      "done": true,
+      "startingCountry": "Athens",
       "startingConditions": "Playing as Athens",
       "requirements": "- *Not* playing as a released vassal\n- Is Athens\n- 50 owned provinces have Universities.",
       "notes": ""
