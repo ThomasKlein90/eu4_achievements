@@ -710,8 +710,8 @@
       "difficulty": "H",
       "rarity": 0.006,
       "points": 147.0,
-      "done": false,
-      "startingCountry": "",
+      "done": true,
+      "startingCountry": "Pskov",
       "startingConditions": "Playing as Pskov",
       "requirements": "Has at least 100 Streltsy units",
       "notes": ""
@@ -1529,8 +1529,8 @@
       "difficulty": "VH",
       "rarity": 0.009,
       "points": 291.0,
-      "done": false,
-      "startingCountry": "",
+      "done": true,
+      "startingCountry": "Theodoro",
       "startingConditions": "Playing as Theodoro",
       "requirements": "- *Not* playing as a released vassal\n- All provinces with *Germanic* culture group in Europe owned by Theodoro\n- Culture is either: \n- *Gothic* from the Byzantine culture group\n- *Gothic* from the Germanic culture group",
       "notes": "Forming other nations will make this achievement much more difficult, \nbecause then all *Germanic* cultured provinces in Europe have to be \nconverted to another culture to fulfill the requirements. This does not \napply if the formed country is a Former colonial nation formable and \nTheodoro still has provinces in the old world, because forming such a \ncountry as Theodoro keeps Theodoro alive so the achievement can still be \nfulfilled by feeding all *Germanic* provinces in Europe to Theodoro if they \nare later vassalized. Note though that playing as a released colonial \nnation doesn't work, because it counts as playing as a released vassal."
@@ -1594,8 +1594,8 @@
       "difficulty": "M",
       "rarity": 0.01,
       "points": 72.5,
-      "done": false,
-      "startingCountry": "Kazan/Nogai",
+      "done": true,
+      "startingCountry": "Kazan",
       "startingConditions": "Playing as *either*: \n\n- Kazan\n- Nogai",
       "requirements": "- *Not* playing as a released vassal\n- Is Kazan or Nogai\n- No *Tatar* culture group province is owned by another country",
       "notes": ""
@@ -2374,8 +2374,8 @@
       "difficulty": "M",
       "rarity": 0.014,
       "points": 71.5,
-      "done": false,
-      "startingCountry": "",
+      "done": true,
+      "startingCountry": "Tunis",
       "startingConditions": "Playing as Tunis",
       "requirements": "Own and core the following provinces:",
       "notes": ""
